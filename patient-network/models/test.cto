@@ -1,0 +1,24 @@
+namespace test
+
+asset PatientRecord identified by recordId {
+  o String recordId
+  --> Patient owner
+  o String hospitalname
+  o String doctorname
+  o String visitdate
+  o String diseasename
+  o Double paymentbillnumber
+  o String paymentmode
+  o Double amountpaid
+}
+
+participant Patient identified by patientId {
+  o String patientId
+  o String name
+  o String dob
+  o String phoneno
+  o String address
+  o String bloodgroup
+}
+
+  
